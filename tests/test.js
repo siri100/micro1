@@ -3,9 +3,9 @@ const { Builder, By, Key, Until } = require('selenium-webdriver');
 const firefox = require('selenium-webdriver/firefox');
 let options = new firefox.Options().setBinary('C:/Users/Amiti/AppData/Local/Mozilla Firefox/firefox.exe');
 
-// var driver = new Builder()
-//     .forBrowser('firefox')
-//    .setFirefoxOptions(options).build();
+ var driver = new Builder()
+     .forBrowser('firefox')
+    .setFirefoxOptions(options).build();
 
 describe('Mochaa Test cases', function () {
     this.timeout(50000);
